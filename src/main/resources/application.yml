@@ -3,9 +3,12 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://ep-dawn-water-aq5qr9g2-pooler.c-8.us-east-1.aws.neon.tech:5432/neondb?sslmode=require
-    username: neondb_owner
-    password: npg_XDvT2c6fCkry
+    # url: jdbc:postgresql://ep-dawn-water-aq5qr9g2-pooler.c-8.us-east-1.aws.neon.tech:5432/neondb?sslmode=require
+    url: ${DB_URL}
+    # username: neondb_owner
+    username: ${DB_USERNAME}
+    # password: npg_XDvT2c6fCkry
+    password: ${DB_PASSWORD}
 
   security:
   user:
